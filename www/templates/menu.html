@@ -17,11 +17,29 @@
             <div style="margin: 0px; line-height: 250px; background-color: rgb(232, 235, 239); text-align: center;">
                 <i class="icon ion-image" style="font-size: 64px; color: rgb(136, 136, 136); vertical-align: middle;"></i>
             </div>
+             <!-- menu list-->
+             <br>
             <ion-list id="menu-null">
-                <ion-item id="menu-list-item1" ui-sref="menu.home" menu-close="" style="">Home</ion-item>
-                <ion-item id="menu-list-item2" ui-sref="menu.help" menu-close="" style="">Help</ion-item>
-                <ion-item id="menu-list-item3" ui-sref="menu.cloud" menu-close="" style="">About</ion-item>
+              <div class="list">
+                <label class="item item-input">
+                  <i class="icon ion-ios-search "></i>
+                    <input type="text" placeholder="      Search">
+                </label>  
+         <br>
+                <ul>
+                  <a class="item item-icon-left" href="#" ui-sref="menu.home"  menu-close="" id="menu-list-item2">
+                    <i class="icon ion-home"></i>Home
+                  </a>
+                  <a class="item item-icon-left" href="#" ui-sref="menu.help"  menu-close="" id="menu-list-item3">
+                    <i class="icon ion-ios-help"></i>Help
+                  </a>
+                  <a class="item item-icon-left" href="#" ui-sref="menu.about"  menu-close="" id="menu-list-item4">
+                    <i class="icon ion-ios-information"></i>About
+                  </a>
+                </ul>
+              </div>
             </ion-list>
+             <!-- menu list end-->
         </ion-content>
     </ion-side-menu>
 </ion-side-menus>

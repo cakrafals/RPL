@@ -7,8 +7,8 @@ angular.module('app.routes', [])
   // Set up the various states which the app can be in.
   // Each state's controller can be found in controllers.js
   $stateProvider
-    
-  
+
+
 
       .state('menu.home', {
     url: '/page1',
@@ -30,7 +30,7 @@ angular.module('app.routes', [])
     }
   })
 
-  .state('menu.cloud', {
+  .state('menu.about', {
     url: '/page3',
     views: {
       'side-menu21': {
@@ -40,6 +40,48 @@ angular.module('app.routes', [])
     }
   })
 
+/**
+tentang pengembang
+**/
+.state('menu.adam', {
+  views: {
+    'side-menu21': {
+      templateUrl: 'templates/team/adam.html',
+      controller: 'aboutCtrl'
+    }
+  }
+})
+.state('menu.cakra', {
+  views: {
+    'side-menu21': {
+      templateUrl: 'templates/team/cakra.html',
+      controller: 'aboutCtrl'
+    }
+  }
+})
+
+
+  .state('menu.faid', {
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/team/faid.html',
+        controller: 'aboutCtrl'
+      }
+    }
+  })
+
+  .state('menu.riski', {
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/team/riski.html',
+        controller: 'aboutCtrl'
+      }
+    }
+  })
+
+/**
+END
+**/
   .state('menu', {
     url: '/side-menu21',
     templateUrl: 'templates/menu.html',
@@ -48,6 +90,6 @@ angular.module('app.routes', [])
 
 $urlRouterProvider.otherwise('/side-menu21/page1')
 
-  
+
 
 });
